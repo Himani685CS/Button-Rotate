@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Task - Independent Color Change</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- PART A: Independent Color Buttons -->
+  <div class="section" id="part-a">
+    <div class="label">PART A -</div>
+
+    <!-- First Row: Fixed Color Buttons -->
+    <div class="button-container">
+      <button class="fixed-btn" id="red-btn" style="background-color: red;">RED</button>
+      <button class="fixed-btn" id="yellow-btn" style="background-color: yellow; color: black;">YELLOW</button>
+      <button class="fixed-btn" id="green-btn" style="background-color: green;">GREEN</button>
+    </div>
+
+    <!-- Second Row: Buttons that Change Color -->
+    <div class="button-container row-buttons" id="color-buttons">
+      <button>RED</button>
+      <button>YELLOW</button>
+      <button>GREEN</button>
+    </div>
+
+    <p>Click a button above to change the color of the buttons below it.</p>
+  </div>
+
+  <!-- PART B: Unaffected Buttons with Rotation Feature -->
+  <div class="section" id="part-b">
+    <div class="label">PART B -</div>
+
+    <!-- Fixed Color Buttons (Constant Colors) -->
+    <div class="button-container">
+      <button style="background-color: red;">RED</button>
+      <button style="background-color: yellow; color: black;">YELLOW</button>
+      <button style="background-color: green;">GREEN</button>
+    </div>
+
+    <!-- Rotatable Color Buttons -->
+    <div class="button-container" id="rotating-buttons">
+      <button style="background-color: red;">RED</button>
+      <button style="background-color: yellow; color: black;">YELLOW</button>
+      <button style="background-color: green;">GREEN</button>
+    </div>
+
+    <!-- Rotate Button -->
+    <div class="button-container">
+      <button id="rotate-btn" style="background-color: gray;">Rotate</button>
+    </div>
+  </div>
+
+  <div class="footer">BUTTON TASK</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

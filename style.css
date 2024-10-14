@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .section {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #part-a .fixed-btn {
+    color: white;
+    font-weight: bold;
+  }
+
+  #part-a .row-buttons button {
+    background-color: red; /* Set initial color to red*/
+  }
+
+  p {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 5px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff8c00;
+  }
