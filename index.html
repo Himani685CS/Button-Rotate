@@ -3,59 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Button Task - Independent Color Change</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Button Task - Color Change and Rotation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <h2>BUTTON TASK</h2>
 
-  <!-- PART A: Independent Color Buttons -->
+  <!-- PART A: Color Change -->
   <div class="section" id="part-a">
-    <div class="label">PART A -</div>
-
-    <!-- First Row: Fixed Color Buttons -->
+    <div class="part-label">PART A -</div>
     <div class="button-container">
-      <button class="fixed-btn" id="red-btn" style="background-color: red;">RED</button>
-      <button class="fixed-btn" id="yellow-btn" style="background-color: yellow; color: black;">YELLOW</button>
-      <button class="fixed-btn" id="green-btn" style="background-color: green;">GREEN</button>
+      <button class="color-btn" id="red-btn">RED</button>
+      <button class="color-btn" id="yellow-btn">YELLOW</button>
+      <button class="color-btn" id="green-btn">GREEN</button>
     </div>
-
-    <!-- Second Row: Buttons that Change Color -->
-    <div class="button-container row-buttons" id="color-buttons">
-      <button>RED</button>
-      <button>YELLOW</button>
-      <button>GREEN</button>
-    </div>
-
-    <p>Click a button above to change the color of the buttons below it.</p>
+    <p>Changing the background color of all three buttons a/c to the BG color of the button clicked</p>
   </div>
 
-  <!-- PART B: Unaffected Buttons with Rotation Feature -->
+  <!-- PART B: Color Rotation -->
   <div class="section" id="part-b">
-    <div class="label">PART B -</div>
-
-    <!-- Fixed Color Buttons (Constant Colors) -->
+    <div class="part-label">PART B -</div>
     <div class="button-container">
-      <button style="background-color: red;">RED</button>
-      <button style="background-color: yellow; color: black;">YELLOW</button>
-      <button style="background-color: green;">GREEN</button>
+      <button class="rotate-btn" id="btn1" style="background-color: red;">RED</button>
+      <button class="rotate-btn" id="btn2" style="background-color: yellow; color: black;">YELLOW</button>
+      <button class="rotate-btn" id="btn3" style="background-color: green;">GREEN</button>
     </div>
-
-    <!-- Rotatable Color Buttons -->
-    <div class="button-container" id="rotating-buttons">
-      <button style="background-color: red;">RED</button>
-      <button style="background-color: yellow; color: black;">YELLOW</button>
-      <button style="background-color: green;">GREEN</button>
-    </div>
-
-    <!-- Rotate Button -->
-    <div class="button-container">
-      <button id="rotate-btn" style="background-color: gray;">Rotate</button>
-    </div>
+    <button id="rotate-btn">Rotate</button>
+    <p>( Clockwise rotation )</p>
   </div>
-
-  <div class="footer">BUTTON TASK</div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
